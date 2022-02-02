@@ -1,0 +1,360 @@
+/**************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+***************************/
+
+#include <stdio.h>
+#include <string.h>
+struct ticket
+{
+    char name[100];
+    int bill;
+} a[10][10],b[10][10];
+
+int main()
+{
+    struct ticket a[10][10],b[10][10];
+    int i,j,k,m,n,l,h,d,t,s;
+    for(i=1;i>=1;i++)
+    {
+    printf("Enter 1 for INOX\n");
+    printf("Enter 2 for INORBIT MALL\n");
+    printf("Enter 3 for AMB MALL\n");
+    printf("Enter 4 for SRUJANA MALL\n");
+    printf("Enter 5 to Exit\n");
+    scanf("%d",&d);
+    switch(d)
+    {
+       case 1:
+       {
+           for(m=1;m>=1;m++)
+           {
+               printf("Enter 1 for ticket booking\n");
+               printf("Enter 2 for ticket verification\n");
+               printf("Enter 3 for ticket Cancellation\n");
+               printf("Enter 4 to stop Ticket booking in INOX\n");
+               scanf("%d",&t);
+               if(t<4)
+               {
+               switch(t)
+               {
+                   case 1:
+                   {
+                       for(i=0;i<10;i++)
+                       {
+                           for(j=0;j<10;j++)
+                           {
+                              strcpy(a[i][j].name,"Empty");
+                               printf("(%d/%d)%s ",i,j,a[i][j].name);
+                           }
+                           printf("\n");
+                       }
+                       printf("Enter no of seats to be booked: ");
+                       scanf("%d",&s);
+                       for(h=1;h<=s;h++)
+                       {
+                           printf("Enter row number of seat : ");
+                           scanf("%d",&i);
+                           printf("Enter column number of seat : ");
+                           scanf("%d",&j);
+                           printf("Enter name: ");
+                           scanf("%s",a[i][j].name);
+                       }
+                       printf("Your bill: %d\n",s*200);
+                       printf("Your seats have been booked\n");
+                       printf("Enjoy the Movie\n");
+                       break;
+                   }
+                   case 2:
+                   {
+                       for(i=0;i<10;i++)
+                       {
+                           for(j=0;j<10;j++)
+                           {
+                               printf("(%d/%d)%s ",i,j,a[i][j].name);
+                               
+                           }
+                           printf("\n");
+                       }
+                       break;
+                   }
+                   case 3:
+                   {
+                       printf("Enter no of seats to be cancelled: ");
+                       scanf("%d",&k);
+                       for(h=1;h<=k;h++)
+                       {
+                           printf("Enter row number of Seat: ");
+                           scanf("%d",&i);
+                           printf("Enter column number of Seat: ");
+                           scanf("%d",&j);
+                           strcpy(a[i][j].name,"Empty");
+                       }
+                       break;
+                   }
+                   
+               }
+               }
+               else
+               {
+                   printf("You have stopped Ticket booking in INOX\n");
+               break; 
+               }
+           }
+          break; 
+       }
+       case 2:
+       {
+          for(m=1;m>=1;m++)
+           {
+               printf("Enter 1 for ticket booking\n");
+               printf("Enter 2 for ticket verification\n");
+               printf("Enter 3 for ticket Cancellation\n");
+               printf("Enter 4 to stop Ticket booking in INORBIT MALL\n");
+               scanf("%d",&t);
+               if(t<4)
+               {
+               switch(t)
+               {
+                   case 1:
+                   {
+                       for(i=0;i<10;i++)
+                       {
+                           for(j=0;j<10;j++)
+                           {
+                              strcpy(a[i][j].name,"Empty");
+                               printf("(%d/%d)%s ",i,j,a[i][j].name);
+                           }
+                           printf("\n");
+                       }
+                       printf("Enter no of seats to be booked: ");
+                       scanf("%d",&s);
+                       for(h=1;h<=s;h++)
+                       {
+                           printf("Enter row number of seat : ");
+                           scanf("%d",&i);
+                           printf("Enter column number of seat : ");
+                           scanf("%d",&j);
+                           printf("Enter name: ");
+                           scanf("%s",a[i][j].name);
+                       }
+                       printf("Your bill: %d\n",s*100);
+                       printf("Your seats have been booked\n");
+                       printf("Enjoy the Movie\n");
+                       break;
+                   }
+                   case 2:
+                   {
+                       for(i=0;i<10;i++)
+                       {
+                           for(j=0;j<10;j++)
+                           {
+                               printf("(%d/%d)%s ",i,j,a[i][j].name);
+                               
+                           }
+                           printf("\n");
+                       }
+                       break;
+                   }
+                   case 3:
+                   {
+                       printf("Enter no of seats to be cancelled: ");
+                       scanf("%d",&k);
+                       for(h=1;h<=k;h++)
+                       {
+                           printf("Enter row number of Seat: ");
+                           scanf("%d",&i);
+                           printf("Enter column number of Seat: ");
+                           scanf("%d",&j);
+                           strcpy(a[i][j].name,"Empty");
+                       }
+                       break;
+                   }
+                   
+               }
+               }
+               else
+               {
+               printf("You have Stopped Ticket booking in INORBIT MALL\n");
+               break;
+               }
+           }
+          break; 
+       }
+       
+           case 3:
+           {
+             for(m=1;m>=1;m++)
+           {
+               printf("Enter 1 for ticket booking\n");
+               printf("Enter 2 for ticket verification\n");
+               printf("Enter 3 for ticket Cancellation\n");
+               printf("Enter 4 to stop Ticket booking in AMB Mall\n");
+               scanf("%d",&t);
+               if(t<4)
+               {
+               switch(t)
+               {
+                   case 1:
+                   {
+                       for(i=0;i<10;i++)
+                       {
+                           for(j=0;j<10;j++)
+                           {
+                              strcpy(a[i][j].name,"Empty");
+                               printf("(%d/%d)%s ",i,j,a[i][j].name);
+                           }
+                           printf("\n");
+                       }
+                       printf("Enter no of seats to be booked: ");
+                       scanf("%d",&s);
+                       for(h=1;h<=s;h++)
+                       {
+                           printf("Enter row number of seat : ");
+                           scanf("%d",&i);
+                           printf("Enter column number of seat : ");
+                           scanf("%d",&j);
+                           printf("Enter name: ");
+                           scanf("%s",a[i][j].name);
+                       }
+                       printf("Your bill: %d\n",s*300);
+                       printf("Your seats have been booked\n");
+                       printf("Enjoy the Movie\n");
+                       break;
+                   }
+                   case 2:
+                   {
+                       for(i=0;i<10;i++)
+                       {
+                           for(j=0;j<10;j++)
+                           {
+                               printf("(%d/%d)%s ",i,j,a[i][j].name);
+                               
+                           }
+                           printf("\n");
+                       }
+                       break;
+                   }
+                   case 3:
+                   {
+                       printf("Enter no of seats to be cancelled: ");
+                       scanf("%d",&k);
+                       for(h=1;h<=k;h++)
+                       {
+                           printf("Enter row number of Seat: ");
+                           scanf("%d",&i);
+                           printf("Enter column number of Seat: ");
+                           scanf("%d",&j);
+                           strcpy(a[i][j].name,"Empty");
+                       }
+                       break;
+                   }
+                   case 4:
+                   {
+                       break;
+                   }
+               }
+               }
+               else
+               {
+               printf("You have stopped Ticket booking in AMB Mall\n");
+           break; 
+               }
+           }
+          break;  
+           }
+           case 4:
+           {
+               for(m=1;m>=1;m++)
+           {
+               printf("Enter 1 for ticket booking\n");
+               printf("Enter 2 for ticket verification\n");
+               printf("Enter 3 for ticket Cancellation\n");
+               printf("Enter 4 to stop Ticket booking in SRUJANA Mall\n");
+               scanf("%d",&t);
+               if(t<4)
+               {
+               switch(t)
+               {
+                   case 1:
+                   {
+                       for(i=0;i<10;i++)
+                       {
+                           for(j=0;j<10;j++)
+                           {
+                              strcpy(a[i][j].name,"Empty");
+                               printf("(%d/%d)%s ",i,j,a[i][j].name);
+                           }
+                           printf("\n");
+                       }
+                       printf("Enter no of seats to be booked: ");
+                       scanf("%d",&s);
+                       for(h=1;h<=s;h++)
+                       {
+                           printf("Enter row number of seat : ");
+                           scanf("%d",&i);
+                           printf("Enter column number of seat : ");
+                           scanf("%d",&j);
+                           printf("Enter name: ");
+                           scanf("%s",a[i][j].name);
+                       }
+                       printf("Your bill: %d\n",s*150);
+                       printf("Your seats have been booked\n");
+                       printf("Enjoy the Movie\n");
+                       break;
+                   }
+                   case 2:
+                   {
+                       for(i=0;i<10;i++)
+                       {
+                           for(j=0;j<10;j++)
+                           {
+                               printf("(%d/%d)%s ",i,j,a[i][j].name);
+                               
+                           }
+                           printf("\n");
+                       }
+                       break;
+                   }
+                   case 3:
+                   {
+                       printf("Enter no of seats to be cancelled: ");
+                       scanf("%d",&k);
+                       for(h=1;h<=k;h++)
+                       {
+                           printf("Enter row number of Seat: ");
+                           scanf("%d",&i);
+                           printf("Enter column number of Seat: ");
+                           scanf("%d",&j);
+                           strcpy(a[i][j].name,"Empty");
+                       }
+                       break;
+                   }
+                   case 4:
+                   {
+                       break;
+                   }
+               }
+               }
+               else
+               {
+               printf("You have stopped Ticket booking in SRUJANA Mall\n");
+           break; 
+               }
+           }
+          break;
+           }
+           break; 
+       }
+       
+    
+    if(d==5)
+    {
+     printf("You have stopped your booking\n");
+     break;
+    }
+    }
+}
